@@ -1,0 +1,121 @@
+nav:
+  home: "Start"
+  cv: "Lebenslauf"
+  pm: "Projektmanagement"
+  ai: "KI & Deep Learning"
+  certs: "Zertifikate"
+  pubs: "Publikationen"
+  contact: "Kontakt"
+
+home:
+  greeting: "Hallo, ich bin"
+  name: "Dr. Martin Tschöpe"
+  role_line1: "Lead Developer & Projektleiter (F&E)"
+  role_org: "Deutsches Zentrum für Luft- und Raumfahrt (DLR)"
+  bio: "Physiker und Softwareentwickler mit Promotion in Rechnergestützter Chemie. Ich verbinde wissenschaftliche Präzision mit moderner Softwareentwicklung und leite komplexe F&E-Projekte von der Konzeption bis zur produktiven Umsetzung."
+  cta_cv: "Lebenslauf ansehen"
+  cta_contact: "Kontakt aufnehmen"
+  stat_experience_value: "6+"
+  stat_experience_label: "Jahre Erfahrung"
+  stat_loc_value: "2,5M"
+  stat_loc_label: "Zeilen Code"
+  stat_papers_value: "9"
+  stat_papers_label: "Publikationen"
+  about_title: "Über mich"
+  about_text: >
+    Mit meiner Promotion in Rechnergestützter Chemie und meiner Tätigkeit als
+    Lead Developer beim DLR kombiniere ich wissenschaftliche Methodik mit
+    pragmatischer Softwareentwicklung. Ich habe Erfahrung in der Leitung
+    großer Softwareprojekte, der Einführung von KI-Methoden in wissenschaftliche
+    Arbeitsabläufe sowie im Projektmanagement im F&E-Umfeld. Mein Ziel ist es,
+    Forschungsexzellenz durch leistungsstarke Software greifbar zu machen.
+  skills_title: "Kernkompetenzen"
+  quicklinks_title: "Schnellzugriff"
+  ql_cv_title: "Lebenslauf"
+  ql_cv_text: "Beruflicher und akademischer Werdegang im Überblick"
+  ql_cv_link: "Ansehen"
+  ql_pub_title: "Publikationen"
+  ql_pub_text: "9 wissenschaftliche Artikel aus der Promotionszeit"
+  ql_pub_link: "Ansehen"
+  ql_contact_title: "Kontakt"
+  ql_contact_text: "Projektanfragen, Bewerbungen oder einfach Hallo sagen"
+  ql_contact_link: "Schreiben"
+
+cv:
+  title: "Lebenslauf"
+  subtitle: "Mein beruflicher und akademischer Werdegang"
+  download: "PDF herunterladen"
+  experience_title: "Berufserfahrung"
+  education_title: "Ausbildung"
+  skills_title: "Kompetenzen"
+  programming: "Programmierung"
+  tools: "Tools & Plattformen"
+  methods: "Methoden"
+  languages: "Sprachkenntnisse"
+  lang_de: "Deutsch – Muttersprache"
+  lang_en: "Englisch – Verhandlungssicher (C1)"
+
+pm:
+  title: "Projektmanagement"
+  subtitle: "Leitung komplexer F&E-Projekte"
+  intro: >
+    Im F&E-Umfeld des DLR leite ich Projekte, die wissenschaftliche Exzellenz
+    mit ingenieurmäßiger Umsetzung verbinden. Mein Ansatz kombiniert agile
+    Prinzipien mit den besonderen Anforderungen der Grundlagenforschung –
+    von der ersten Idee bis zur produktiven Software.
+  competencies_title: "Kernkompetenzen"
+  projects_title: "Ausgewählte Projekte"
+
+ai:
+  title: "KI & Deep Learning"
+  subtitle: "Maschinelles Lernen in der Wissenschaft"
+  intro: >
+    Von klassischen ML-Methoden bis zu tiefen neuronalen Netzen – ich entwickle
+    und implementiere KI-Lösungen für anspruchsvolle wissenschaftliche
+    Fragestellungen. Mein Schwerpunkt liegt auf der Anwendung von Deep Learning
+    in der Rechnerchemie und der Entwicklung hochperformanter neuronaler
+    Netzwerkpotentiale für molekulare Simulationen.
+  competencies_title: "Technologien & Methoden"
+  projects_title: "Projekte & Anwendungen"
+
+certs:
+  title: "Zertifikate"
+  subtitle: "Weiterbildungen und Qualifikationsnachweise"
+  intro: >
+    Kontinuierliche Weiterbildung ist für mich selbstverständlich.
+    Hier finden Sie eine Übersicht meiner Zertifikate und Teilnahmenachweise.
+  open: "Zertifikat öffnen"
+  coming_soon: "Folgt"
+
+pubs:
+  title: "Publikationen"
+  subtitle: "Wissenschaftliche Veröffentlichungen (2019–2023)"
+  intro: >
+    Während meiner Promotion habe ich 9 wissenschaftliche Artikel veröffentlicht,
+    davon 4 als Erstautor. Meine Forschung konzentriert sich auf
+    molekulare Spektroskopie und hochperformante neuronale Netzwerkpotentiale.
+  filter_all: "Alle"
+  filter_first: "Erstautor"
+  filter_co: "Co-Autor"
+  by_role: "Nach Rolle"
+  by_year: "Nach Jahr"
+  open_pdf: "PDF öffnen"
+  no_results: "Keine Publikationen für diesen Filter gefunden."
+
+contact:
+  title: "Kontakt"
+  subtitle: "Lassen Sie uns zusammenarbeiten"
+  intro: >
+    Ob für Projektanfragen, Bewerbungsgespräche oder allgemeine Fragen –
+    ich freue mich über Ihre Nachricht.
+  info_title: "Direkter Kontakt"
+  response_time: "Ich antworte in der Regel innerhalb von 24–48 Stunden."
+  name_label: "Name"
+  email_label: "E-Mail"
+  message_label: "Nachricht"
+  name_placeholder: "Ihr Name"
+  email_placeholder: "ihre@email.de"
+  message_placeholder: "Ihre Nachricht..."
+  submit: "Nachricht senden"
+  location: "Herrenberg, Deutschland"
+  error_msg: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie direkt an martin_tschoepe@gmx.de"

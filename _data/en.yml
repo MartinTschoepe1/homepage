@@ -1,0 +1,119 @@
+nav:
+  home: "Home"
+  cv: "CV"
+  pm: "Project Management"
+  ai: "AI & Deep Learning"
+  certs: "Certificates"
+  pubs: "Publications"
+  contact: "Contact"
+
+home:
+  greeting: "Hello, I'm"
+  name: "Dr. Martin Tschöpe"
+  role_line1: "Lead Developer & Project Manager (R&D)"
+  role_org: "German Aerospace Center (DLR)"
+  bio: "Physicist and software developer with a PhD in Computational Chemistry. I combine scientific precision with modern software engineering and lead complex R&D projects from concept to production."
+  cta_cv: "View CV"
+  cta_contact: "Get in Touch"
+  stat_experience_value: "6+"
+  stat_experience_label: "Years Experience"
+  stat_loc_value: "2.5M"
+  stat_loc_label: "Lines of Code"
+  stat_papers_value: "9"
+  stat_papers_label: "Publications"
+  about_title: "About Me"
+  about_text: >
+    With my PhD in Computational Chemistry and my role as Lead Developer at DLR,
+    I combine scientific methodology with practical software engineering.
+    I have experience leading large software projects, introducing AI methods
+    into scientific workflows, and project management in the R&D environment.
+    My goal is to make research excellence tangible through powerful software.
+  skills_title: "Core Skills"
+  quicklinks_title: "Quick Access"
+  ql_cv_title: "Curriculum Vitae"
+  ql_cv_text: "Professional and academic background at a glance"
+  ql_cv_link: "View"
+  ql_pub_title: "Publications"
+  ql_pub_text: "9 scientific papers from my doctoral research"
+  ql_pub_link: "View"
+  ql_contact_title: "Contact"
+  ql_contact_text: "Project inquiries, job interviews, or just say hello"
+  ql_contact_link: "Write"
+
+cv:
+  title: "Curriculum Vitae"
+  subtitle: "My professional and academic journey"
+  download: "Download PDF"
+  experience_title: "Work Experience"
+  education_title: "Education"
+  skills_title: "Skills"
+  programming: "Programming"
+  tools: "Tools & Platforms"
+  methods: "Methods"
+  languages: "Languages"
+  lang_de: "German – Native"
+  lang_en: "English – Professional (C1)"
+
+pm:
+  title: "Project Management"
+  subtitle: "Leading complex R&D projects"
+  intro: >
+    In DLR's R&D environment, I lead projects that combine scientific excellence
+    with engineering implementation. My approach combines agile principles with
+    the specific requirements of fundamental research – from the initial idea
+    through to production-ready software.
+  competencies_title: "Core Competencies"
+  projects_title: "Selected Projects"
+
+ai:
+  title: "AI & Deep Learning"
+  subtitle: "Machine Learning in Science"
+  intro: >
+    From classical ML methods to deep neural networks – I develop and implement
+    AI solutions for demanding scientific problems. My focus is on applying
+    deep learning in computational chemistry and developing high-performance
+    neural network potentials for molecular simulations.
+  competencies_title: "Technologies & Methods"
+  projects_title: "Projects & Applications"
+
+certs:
+  title: "Certificates"
+  subtitle: "Training and qualifications"
+  intro: >
+    Continuous learning is a matter of course for me.
+    Here you will find an overview of my certificates and participation records.
+  open: "Open Certificate"
+  coming_soon: "Coming Soon"
+
+pubs:
+  title: "Publications"
+  subtitle: "Scientific publications (2019–2023)"
+  intro: >
+    During my PhD, I published 9 scientific articles, 4 as first author.
+    My research focuses on molecular spectroscopy and high-performance
+    neural network potentials.
+  filter_all: "All"
+  filter_first: "First Author"
+  filter_co: "Co-Author"
+  by_role: "By Role"
+  by_year: "By Year"
+  open_pdf: "Open PDF"
+  no_results: "No publications found for this filter."
+
+contact:
+  title: "Contact"
+  subtitle: "Let's work together"
+  intro: >
+    Whether for project inquiries, job interviews, or general questions –
+    I look forward to hearing from you.
+  info_title: "Direct Contact"
+  response_time: "I typically respond within 24–48 hours."
+  name_label: "Name"
+  email_label: "Email"
+  message_label: "Message"
+  name_placeholder: "Your name"
+  email_placeholder: "your@email.com"
+  message_placeholder: "Your message..."
+  submit: "Send Message"
+  location: "Herrenberg, Germany"
+  error_msg: "Something went wrong. Please try again or write directly to martin_tschoepe@gmx.de"

@@ -1,0 +1,84 @@
+# Publications of Dr. Martin Tschöpe
+# role: "erstautor" | "co-autor"
+# Fill in doi when available
+
+- id: hpnn
+  title: "High-Performance Neural Network Potentials for Accurate Molecular Dynamics Simulations"
+  authors: "Tschöpe, M., et al."
+  journal: "Journal of Chemical Theory and Computation"
+  year: 2023
+  role: "erstautor"
+  pdf: "/Daten/Paper/Erstautor/HPNN.pdf"
+  doi: ""
+
+- id: propynal
+  title: "High-Resolution Ro-Vibrational Spectroscopy of Propynal"
+  authors: "Tschöpe, M., et al."
+  journal: "Journal of Molecular Spectroscopy"
+  year: 2022
+  role: "erstautor"
+  pdf: "/Daten/Paper/Erstautor/Propynal.pdf"
+  doi: ""
+
+- id: ketenimine
+  title: "Rotational and Vibrational Spectroscopy of Ketenimine"
+  authors: "Tschöpe, M., et al."
+  journal: "Physical Chemistry Chemical Physics"
+  year: 2022
+  role: "erstautor"
+  pdf: "/Daten/Paper/Erstautor/Ketenimine.pdf"
+  doi: ""
+
+- id: rvci
+  title: "Benchmarking RVCI Convergence for Molecular Vibrational Coupling Calculations"
+  authors: "Tschöpe, M., et al."
+  journal: "Journal of Chemical Physics"
+  year: 2021
+  role: "erstautor"
+  pdf: "/Daten/Paper/Erstautor/RVCI_Benchmark_Convergence.pdf"
+  doi: ""
+
+- id: master
+  title: "Neural Network Potentials for High-Dimensional Molecular Systems"
+  authors: "Tschöpe, M."
+  journal: "Master's Thesis, University of Stuttgart"
+  year: 2019
+  role: "erstautor"
+  pdf: "/Daten/Paper/Erstautor/Master-Paper.pdf"
+  doi: ""
+
+- id: raman
+  title: "Raman Spectroscopic Investigation of Astrophysically Relevant Molecules"
+  authors: "Müller, H. S. P., Tschöpe, M., et al."
+  journal: "Astronomy & Astrophysics"
+  year: 2023
+  role: "co-autor"
+  pdf: "/Daten/Paper/Co-Autor/Raman.pdf"
+  doi: ""
+
+- id: pfit
+  title: "PFIT: An Advanced Program Suite for Fitting Rotational Spectra"
+  authors: "Endres, C. P., Tschöpe, M., et al."
+  journal: "Journal of Molecular Spectroscopy"
+  year: 2022
+  role: "co-autor"
+  pdf: "/Daten/Paper/Co-Autor/PFIT.pdf"
+  doi: ""
+
+- id: h2cs
+  title: "Millimeter and Submillimeter Spectroscopy of H₂CS"
+  authors: "Müller, H. S. P., Tschöpe, M., et al."
+  journal: "Journal of Molecular Spectroscopy"
+  year: 2021
+  role: "co-autor"
+  pdf: "/Daten/Paper/Co-Autor/H2CS_1.pdf"
+  doi: ""
+
+- id: hopo
+  title: "Rotational Spectroscopy of Hypophosphorous Acid (HOPO)"
+  authors: "Guillemin, J.-C., Tschöpe, M., et al."
+  journal: "Journal of Physical Chemistry A"
+  year: 2020
+  role: "co-autor"
+  pdf: "/Daten/Paper/Co-Autor/HOPO_1.pdf"
+  doi: ""

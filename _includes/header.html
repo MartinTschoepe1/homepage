@@ -1,0 +1,67 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">Martin Tschöpe</a>
+
+    <div class="header-controls">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Sprache wechseln / Switch language">
+        <span class="lang-de">EN</span>
+        <span class="lang-en">DE</span>
+      </button>
+
+      <button class="burger" id="burger-btn" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-drawer" id="nav-drawer" aria-hidden="true" aria-label="Hauptnavigation">
+    <ul class="nav-list">
+      <li>
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <span class="lang-de">Start</span>
+          <span class="lang-en">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/cv.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">Lebenslauf</span>
+          <span class="lang-en">CV</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/projektmanagement.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">Projektmanagement</span>
+          <span class="lang-en">Project Management</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/ki.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">KI &amp; Deep Learning</span>
+          <span class="lang-en">AI &amp; Deep Learning</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/zertifikate.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">Zertifikate</span>
+          <span class="lang-en">Certificates</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/publikationen.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">Publikationen</span>
+          <span class="lang-en">Publications</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/kontakt.html' | relative_url }}" class="nav-link">
+          <span class="lang-de">Kontakt</span>
+          <span class="lang-en">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+</header>

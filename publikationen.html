@@ -1,0 +1,140 @@
+---
+layout: default
+title: "Publikationen / Publications"
+description: "Wissenschaftliche Publikationen von Dr. Martin Tschöpe – 9 Artikel in molekularer Spektroskopie und neuronalen Netzwerkpotentialen."
+---
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">
+      <span class="lang-de">{{ site.data.de.pubs.title }}</span>
+      <span class="lang-en">{{ site.data.en.pubs.title }}</span>
+    </h1>
+    <p class="page-hero-subtitle">
+      <span class="lang-de">{{ site.data.de.pubs.subtitle }}</span>
+      <span class="lang-en">{{ site.data.en.pubs.subtitle }}</span>
+    </p>
+  </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<section class="section">
+  <div class="container">
+
+    <p class="intro-box slide-up">
+      <span class="lang-de">{{ site.data.de.pubs.intro }}</span>
+      <span class="lang-en">{{ site.data.en.pubs.intro }}</span>
+    </p>
+
+    <!-- FILTERS -->
+    <div class="pub-filters slide-up">
+
+      <!-- By Role -->
+      <div class="pub-filter-group">
+        <span class="pub-filter-label">
+          <span class="lang-de">{{ site.data.de.pubs.by_role }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.by_role }}</span>
+        </span>
+        <button class="filter-btn is-active" data-filter-type="role" data-filter="all">
+          <span class="lang-de">{{ site.data.de.pubs.filter_all }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.filter_all }}</span>
+        </button>
+        <button class="filter-btn" data-filter-type="role" data-filter="erstautor">
+          <span class="lang-de">{{ site.data.de.pubs.filter_first }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.filter_first }}</span>
+        </button>
+        <button class="filter-btn" data-filter-type="role" data-filter="co-autor">
+          <span class="lang-de">{{ site.data.de.pubs.filter_co }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.filter_co }}</span>
+        </button>
+      </div>
+
+      <!-- By Year -->
+      <div class="pub-filter-group">
+        <span class="pub-filter-label">
+          <span class="lang-de">{{ site.data.de.pubs.by_year }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.by_year }}</span>
+        </span>
+        <button class="filter-btn is-active" data-filter-type="year" data-filter="all">
+          <span class="lang-de">{{ site.data.de.pubs.filter_all }}</span>
+          <span class="lang-en">{{ site.data.en.pubs.filter_all }}</span>
+        </button>
+        {% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
+        {% for yr in years %}
+        <button class="filter-btn" data-filter-type="year" data-filter="{{ yr }}">{{ yr }}</button>
+        {% endfor %}
+      </div>
+
+    </div>
+
+    <!-- PUBLICATION LIST -->
+    <div class="pub-list">
+      {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
+      {% assign pub_num = sorted_pubs | size %}
+      {% for pub in sorted_pubs %}
+      <article
+        class="pub-item slide-up"
+        data-role="{{ pub.role }}"
+        data-year="{{ pub.year }}"
+      >
+        <p class="pub-number">
+          <span class="lang-de">
+            {% if pub.role == "erstautor" %}Erstautor{% else %}Co-Autor{% endif %}
+            · {{ pub.year }}
+          </span>
+          <span class="lang-en">
+            {% if pub.role == "erstautor" %}First Author{% else %}Co-Author{% endif %}
+            · {{ pub.year }}
+          </span>
+        </p>
+
+        <h2 class="pub-title">{{ pub.title }}</h2>
+
+        <p class="pub-authors">{{ pub.authors }}</p>
+
+        <p class="pub-journal">{{ pub.journal }}</p>
+
+        <div class="pub-meta">
+          <span class="pub-badge pub-badge--{{ pub.role }}">
+            <span class="lang-de">{% if pub.role == "erstautor" %}Erstautor{% else %}Co-Autor{% endif %}</span>
+            <span class="lang-en">{% if pub.role == "erstautor" %}First Author{% else %}Co-Author{% endif %}</span>
+          </span>
+
+          <span class="pub-year-badge">{{ pub.year }}</span>
+
+          {% if pub.pdf and pub.pdf != "" %}
+          <a href="{{ pub.pdf | relative_url }}"
+             class="btn btn-ghost btn-sm"
+             target="_blank"
+             rel="noopener">
+            <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            <span class="lang-de">{{ site.data.de.pubs.open_pdf }}</span>
+            <span class="lang-en">{{ site.data.en.pubs.open_pdf }}</span>
+          </a>
+          {% endif %}
+
+          {% if pub.doi and pub.doi != "" %}
+          <a href="https://doi.org/{{ pub.doi }}"
+             class="btn btn-ghost btn-sm"
+             target="_blank"
+             rel="noopener">
+            DOI
+          </a>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- No Results Message -->
+    <p id="pub-no-results" hidden class="text-center text-muted mt-6">
+      <span class="lang-de">{{ site.data.de.pubs.no_results }}</span>
+      <span class="lang-en">{{ site.data.en.pubs.no_results }}</span>
+    </p>
+
+  </div>
+</section>

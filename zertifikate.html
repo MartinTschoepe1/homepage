@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Zertifikate / Certificates"
+description: "Zertifikate und Weiterbildungsnachweise von Dr. Martin Tschöpe."
+---
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1 class="page-hero-title">
+      <span class="lang-de">{{ site.data.de.certs.title }}</span>
+      <span class="lang-en">{{ site.data.en.certs.title }}</span>
+    </h1>
+    <p class="page-hero-subtitle">
+      <span class="lang-de">{{ site.data.de.certs.subtitle }}</span>
+      <span class="lang-en">{{ site.data.en.certs.subtitle }}</span>
+    </p>
+  </div>
+</div>
+
+<!-- CERTIFICATES GRID -->
+<section class="section">
+  <div class="container">
+    <p class="intro-box slide-up">
+      <span class="lang-de">{{ site.data.de.certs.intro }}</span>
+      <span class="lang-en">{{ site.data.en.certs.intro }}</span>
+    </p>
+
+    <div class="cert-grid stagger-children">
+      {% for cert in site.data.zertifikate %}
+      <article class="cert-card{% if cert.coming_soon %} coming-soon{% endif %}">
+
+        <!-- Thumbnail / Badge -->
+        {% if cert.badge and cert.badge != "" %}
+          <img
+            src="{{ cert.badge | relative_url }}"
+            alt="{{ cert.name_de }}"
+            class="cert-thumbnail"
+            loading="lazy"
+          >
+        {% else %}
+          <div class="cert-thumbnail-placeholder" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+        {% endif %}
+
+        <!-- Info -->
+        <div class="cert-info">
+          <h2 class="cert-name">
+            <span class="lang-de">{{ cert.name_de }}</span>
+            <span class="lang-en">{{ cert.name_en }}</span>
+          </h2>
+
+          {% if cert.issuer and cert.issuer != "" %}
+            <p class="cert-issuer">{{ cert.issuer }}</p>
+          {% endif %}
+
+          {% if cert.year and cert.year != "" %}
+            <p class="cert-year">{{ cert.year }}</p>
+          {% endif %}
+
+          <!-- Actions -->
+          <div class="cert-actions">
+            {% if cert.coming_soon %}
+              <span class="cert-coming-soon-badge">
+                <span class="lang-de">{{ site.data.de.certs.coming_soon }}</span>
+                <span class="lang-en">{{ site.data.en.certs.coming_soon }}</span>
+              </span>
+            {% elsif cert.file and cert.file != "" %}
+              <a href="{{ cert.file | relative_url }}"
+                 class="btn btn-ghost btn-sm"
+                 target="_blank"
+                 rel="noopener">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                <span class="lang-de">{{ site.data.de.certs.open }}</span>
+                <span class="lang-en">{{ site.data.en.certs.open }}</span>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+# Certificates of Dr. Martin Tschöpe
+# coming_soon: true  → grayed out, no download link
+# badge: path to preview image (PNG/JPG)
+# file: path to certificate PDF
+
+- id: clean-code
+  name_de: "Clean Code Developer"
+  name_en: "Clean Code Developer"
+  issuer: "Clean Code Developer Community"
+  year: "2022"
+  file: "/Daten/Teilnahme-Zertifikate/CleanCodeDeveloper/CCD_Zertifikat.pdf"
+  badge: "/Daten/Teilnahme-Zertifikate/CleanCodeDeveloper/Badge.png"
+  coming_soon: false
+
+- id: hpc
+  name_de: "Hochleistungsrechnen (HPC)"
+  name_en: "High-Performance Computing (HPC)"
+  issuer: "HLRS / Universität Stuttgart"
+  year: "2021"
+  file: "/Daten/Teilnahme-Zertifikate/Hochleistungsrechnen/Zertifikat_Seite_1.png"
+  badge: "/Daten/Teilnahme-Zertifikate/Hochleistungsrechnen/Zertifikat_Seite_1.png"
+  coming_soon: false
+
+- id: fuehren
+  name_de: "Führen ohne Weisungsbefugnis"
+  name_en: "Leading Without Formal Authority"
+  issuer: "DLR Weiterbildung"
+  year: "2025"
+  file: "/Daten/Teilnahme-Zertifikate/Fuehren_ohne_Weisungsbefugnis/TN-Bescheinigung_Fachl.Fhrg_2510.pdf"
+  badge: ""
+  coming_soon: false
+
+- id: alfatraining-dl
+  name_de: "Deep Learning mit TensorFlow"
+  name_en: "Deep Learning with TensorFlow"
+  issuer: "Alfatraining Bildungszentrum"
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true
+
+- id: alfatraining-ml
+  name_de: "Machine Learning"
+  name_en: "Machine Learning"
+  issuer: "Alfatraining Bildungszentrum"
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true
+
+- id: alfatraining-da
+  name_de: "Data Analytics"
+  name_en: "Data Analytics"
+  issuer: "Alfatraining Bildungszentrum"
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true
+
+- id: alfatraining-de
+  name_de: "Data Engineering"
+  name_en: "Data Engineering"
+  issuer: "Alfatraining Bildungszentrum"
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true
+
+- id: scholarship
+  name_de: "Deutschlandstipendium"
+  name_en: "German Academic Scholarship"
+  issuer: "BMBF"
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true
+
+- id: paramedic
+  name_de: "Sanitätsausbildung"
+  name_en: "Paramedic Certificate"
+  issuer: ""
+  year: ""
+  file: ""
+  badge: ""
+  coming_soon: true

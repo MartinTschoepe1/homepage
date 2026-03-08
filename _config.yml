@@ -1,0 +1,24 @@
+title: "Martin Tschöpe"
+description: "Lead Developer & Project Manager (R&D) am DLR – Computational Science, KI und Software-Engineering"
+baseurl: "/homepage"
+url: "https://martintschoepe1.github.io"
+
+author:
+  name: "Dr. Martin Tschöpe"
+  email: "martin_tschoepe@gmx.de"
+  location: "Herrenberg, Deutschland"
+  github: "MartinTschoepe1"
+
+plugins:
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .claude/
+  - vendor/
+  - "*.py"
+  - README.md

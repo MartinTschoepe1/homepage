@@ -1,0 +1,274 @@
+---
+layout: default
+title: "Martin Tschöpe – Lead Developer & Projektleiter"
+description: "Dr. Martin Tschöpe – Lead Developer & Projektleiter (F&E) am DLR. Computational Science, KI und Software-Engineering."
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <!-- Profile Image -->
+    <div class="hero-image-wrap">
+      <img
+        src="{{ '/assets/img/profile.jpg' | relative_url }}"
+        alt="Dr. Martin Tschöpe"
+        class="hero-profile-img"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        loading="eager"
+      >
+      <div class="hero-profile-placeholder" style="display:none;" aria-hidden="true">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="lang-de">{{ site.data.de.home.greeting }}</span>
+        <span class="lang-en">{{ site.data.en.home.greeting }}</span>
+      </p>
+
+      <h1 class="hero-name">{{ site.data.de.home.name }}</h1>
+
+      <p class="hero-role">
+        <strong>
+          <span class="lang-de">{{ site.data.de.home.role_line1 }}</span>
+          <span class="lang-en">{{ site.data.en.home.role_line1 }}</span>
+        </strong><br>
+        <span class="lang-de">{{ site.data.de.home.role_org }}</span>
+        <span class="lang-en">{{ site.data.en.home.role_org }}</span>
+      </p>
+
+      <p class="hero-bio">
+        <span class="lang-de">{{ site.data.de.home.bio }}</span>
+        <span class="lang-en">{{ site.data.en.home.bio }}</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="{{ '/cv.html' | relative_url }}" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          <span class="lang-de">{{ site.data.de.home.cta_cv }}</span>
+          <span class="lang-en">{{ site.data.en.home.cta_cv }}</span>
+        </a>
+        <a href="{{ '/kontakt.html' | relative_url }}" class="btn btn-outline">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span class="lang-de">{{ site.data.de.home.cta_contact }}</span>
+          <span class="lang-en">{{ site.data.en.home.cta_contact }}</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value">{{ site.data.de.home.stat_experience_value }}</span>
+          <span class="stat-label lang-de">{{ site.data.de.home.stat_experience_label }}</span>
+          <span class="stat-label lang-en">{{ site.data.en.home.stat_experience_label }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">{{ site.data.de.home.stat_loc_value }}</span>
+          <span class="stat-label lang-de">{{ site.data.de.home.stat_loc_label }}</span>
+          <span class="stat-label lang-en">{{ site.data.en.home.stat_loc_label }}</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">{{ site.data.de.home.stat_papers_value }}</span>
+          <span class="stat-label lang-de">{{ site.data.de.home.stat_papers_label }}</span>
+          <span class="stat-label lang-en">{{ site.data.en.home.stat_papers_label }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <div class="container">
+    <div class="section-header slide-up">
+      <h2 class="section-title">
+        <span class="lang-de">{{ site.data.de.home.about_title }}</span>
+        <span class="lang-en">{{ site.data.en.home.about_title }}</span>
+      </h2>
+    </div>
+    <p class="slide-up" style="max-width:720px; margin: 0 auto; font-size:1.05rem; line-height:1.8;">
+      <span class="lang-de">{{ site.data.de.home.about_text }}</span>
+      <span class="lang-en">{{ site.data.en.home.about_text }}</span>
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header slide-up">
+      <h2 class="section-title">
+        <span class="lang-de">{{ site.data.de.home.skills_title }}</span>
+        <span class="lang-en">{{ site.data.en.home.skills_title }}</span>
+      </h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Python</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 90%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">C++</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">TensorFlow / Deep Learning</span>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 75%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Git / CI/CD</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name lang-de">Projektmanagement</span>
+          <span class="skill-name lang-en">Project Management</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-header">
+          <span class="skill-name">Fortran / HPC</span>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="--fill-pct: 78%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header slide-up">
+      <h2 class="section-title">
+        <span class="lang-de">{{ site.data.de.home.quicklinks_title }}</span>
+        <span class="lang-en">{{ site.data.en.home.quicklinks_title }}</span>
+      </h2>
+    </div>
+
+    <div class="grid-3 stagger-children">
+      <!-- CV Card -->
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h3 class="card-title">
+          <span class="lang-de">{{ site.data.de.home.ql_cv_title }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_cv_title }}</span>
+        </h3>
+        <p class="card-text">
+          <span class="lang-de">{{ site.data.de.home.ql_cv_text }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_cv_text }}</span>
+        </p>
+        <div class="mt-4">
+          <a href="{{ '/cv.html' | relative_url }}" class="btn btn-ghost btn-sm">
+            <span class="lang-de">{{ site.data.de.home.ql_cv_link }}</span>
+            <span class="lang-en">{{ site.data.en.home.ql_cv_link }}</span>
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Publications Card -->
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <h3 class="card-title">
+          <span class="lang-de">{{ site.data.de.home.ql_pub_title }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_pub_title }}</span>
+        </h3>
+        <p class="card-text">
+          <span class="lang-de">{{ site.data.de.home.ql_pub_text }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_pub_text }}</span>
+        </p>
+        <div class="mt-4">
+          <a href="{{ '/publikationen.html' | relative_url }}" class="btn btn-ghost btn-sm">
+            <span class="lang-de">{{ site.data.de.home.ql_pub_link }}</span>
+            <span class="lang-en">{{ site.data.en.home.ql_pub_link }}</span>
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Card -->
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h3 class="card-title">
+          <span class="lang-de">{{ site.data.de.home.ql_contact_title }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_contact_title }}</span>
+        </h3>
+        <p class="card-text">
+          <span class="lang-de">{{ site.data.de.home.ql_contact_text }}</span>
+          <span class="lang-en">{{ site.data.en.home.ql_contact_text }}</span>
+        </p>
+        <div class="mt-4">
+          <a href="{{ '/kontakt.html' | relative_url }}" class="btn btn-ghost btn-sm">
+            <span class="lang-de">{{ site.data.de.home.ql_contact_link }}</span>
+            <span class="lang-en">{{ site.data.en.home.ql_contact_link }}</span>
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
